@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="codee.css">
+    <script src="codee.js" type="text/javascript"></script>
+
+</head>
+<style>
+    body {
+        background-color: rgb(203, 199, 209);
+    }
+    
+    h3 {
+        color: rgb(26, 11, 39);
+        text-align: left;
+    }
+    
+    .colonne {
+        position: relative;
+        float: left;
+        width: 30%;
+        min-height: 200px;
+        text-align: center;
+        margin: 10px;
+        padding: 5px;
+    }
+    
+    .image {
+        width: 250px;
+        opacity: 1;
+        display: block;
+        transition: 0, 5s ease;
+        backface-visibility: hidden;
+        height: 235px;
+        padding: 10px;
+        margin: auto;
+        align-items: center;
+    }
+    
+    .middle {
+        transition: 0, 5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .text {
+        position: relative;
+        background: #020908;
+        color: #fafafa;
+        font-size: 16px;
+        padding: 16px 32px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+    <div class="colonne">
+        <img src="C:\Users\safae\Downloads\ProjectFin\maquillage.jfif" class="image">
+        <div class="middle">
+            <div class="text">Maquillages</div>
+        </div>
+    </div>
+    <div class="colonne">
+        <img src="C:\Users\safae\Downloads\ProjectFin\creme.jfif" class="image">
+        <div class="middle">
+            <div class="text">Crémes</div>
+        </div>
+    </div>
+    <div class="colonne">
+        <img src="C:\Users\safae\Downloads\ProjectFin\soins.jfif" class="image">
+        <div class="middle">
+            <div class="text">Soins</div>
+        </div>
+    </div>
+    <div class="colonne">
+        <img src="C:\Users\safae\Downloads\ProjectFin\ongle.jfif" class="image">
+        <div class="middle">
+            <div class="text">Accessoires Pour Les Ongles</div>
+        </div>
+    </div>
+</body>
+
+</html>

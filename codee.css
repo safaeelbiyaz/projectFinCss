@@ -1,0 +1,271 @@
+body,
+html,
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Dejavu Sans", Verdana, "Sans-serif";
+    box-sizing: border-box;
+}
+
+#slider {
+    background-color: #ccc;
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+#img {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+}
+
+#btn_left {
+    height: 550px;
+    width: 100px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+#btn_right {
+    height: 550px;
+    width: 100px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+.left {
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    width: 60px;
+    height: 70px;
+    opacity: 0.4;
+}
+
+.left:hover {
+    opacity: 1;
+}
+
+.right {
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    width: 60px;
+    height: 70px;
+    opacity: 0.4;
+}
+
+.right:hover {
+    opacity: 1;
+}
+
+#rs {
+    position: absolute;
+    text-align: center;
+    top: 170px;
+}
+
+.soc {
+    margin: 5px;
+    padding: 13px;
+    width: 70px;
+    height: 70px;
+}
+
+#menu {
+    background-color: rgb(70, 67, 67);
+    position: relative;
+    top: 280px;
+    overflow: hidden;
+}
+
+#menu ul li .sub_menu li {
+    width: 180px;
+    background-color: #636661;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(70, 67, 67);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+
+li a:hover:not(.active) {
+    background: #008080;
+}
+
+.active {
+    background: #008080;
+}
+
+li:hover .sub_menu {
+    display: block;
+}
+
+.sub_menu {
+    display: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 180px;
+    background-color: #4f4c4c;
+}
+
+.sub_menu li {
+    padding: 8px 0;
+    font-size: 1em;
+}
+
+#safae {
+    width: 89%;
+    margin: auto;
+    margin-right: auto;
+    border-bottom-width: 0px;
+    padding-left: 0px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 0px;
+}
+
+.chaimae {
+    font-size: 26px;
+    width: 70%;
+    margin-top: 30%;
+    color: #071301;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: -20px;
+}
+
+p {
+    text-align: justify;
+    line-height: 20px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    color: #313030;
+}
+
+.colonne {
+    position: relative;
+    float: left;
+    width: 30%;
+    min-height: 200px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.image {
+    width: 200px;
+    opacity: 1;
+    display: block;
+    transition: 0, 5s ease;
+    backface-visibility: hidden;
+    height: 100px;
+    padding: 20;
+    margin: auto;
+    align-items: center;
+}
+
+.middle {
+    transition: 0, 5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    position: relative;
+    background: #7eb199;
+    color: #011608;
+    font-size: 16px;
+    padding: 16px 32px;
+    cursor: pointer;
+}
+
+.colonne:hover .image {
+    opacity: 0.3;
+}
+
+.colonne:hover .middle {
+    opacity: 1;
+}
+
+.inscri {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 6% 0;
+    text-align: center;
+    text-decoration: none;
+    clear: left;
+}
+
+.inscri h2 {
+    color: black;
+    text-align: center;
+}
+
+.inscri .inscription {
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.inscri .inscription .input {
+    width: 50%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #f00a3c;
+    padding: 1% 1% 1% 1%;
+    text-align: center;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: 50%;
+    line-height: 2;
+    color: aliceblue;
+    outline: none;
+}
+
+.inscri .inscription button :hover {
+    color: #f00a3c;
+    padding: 10px 40px;
+    transition: 2s;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #313030;
+    color: white;
+    text-align: center;
+}
+
+.sociaux {
+    width: 25px;
+    height: 25px;
+}
+
+.footer h2 {
+    color: aliceblue;
+}
